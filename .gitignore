@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/*
+data
+**/*.tiff
+**/*.indd
+**/*.jpeg
+**/*.jpg
+archive
+*.zip
+*.mov
+*.mp4
