@@ -9,3 +9,6 @@ convert -size 400x400 xc:black \
 
 
 ffmpeg -i film1688597615.mp4 -i film1688783216.mp4 -filter_complex "[0:v][1:v] overlay=w/2:0:enable='between(t,0,20)'"  -pix_fmt yuv420p -c:a copy film$(date "+%s").mp4
+
+
+ffmpeg -i combined6.mp4 -filter_complex "scale=w=.1*iw:h=.1*ih" combined6a.mp4
